@@ -87,12 +87,14 @@ var mbAttr = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=
 
 
   var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
-    dark  = L.tileLayer(mbUrl, {id: 'mapbox.dark',   attribution: mbAttr});
+    dark  = L.tileLayer(mbUrl, {id: 'mapbox.dark',   attribution: mbAttr}),
+      satellite  = L.tileLayer(mbUrl, {id: 'mapbox.satellite',   attribution: mbAttr});
 
  
   var baseLayers = {
     "Grayscale": grayscale,
     "Dark": dark
+    "Satllite":satellite
   };
 
   
